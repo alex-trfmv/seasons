@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Весна</title>
+    <link rel="stylesheet" href="vesna.css">
+</head>
+<body>
+    <div id="infospring">
+        <main>
+            <h1>Весна 2024</h1>
+            <p>Тепло на солнышке. Весна <br>
+                Берет свои права. <br>
+                В реке местами глубь ясна, <br>
+                На дне видна трава. </p>
+        </main>
+        <section>
+            <h2>Признаки весны</h2>
+            <ul>
+                <li>Капель</li>
+                <li>Потепление</li>
+                <li>Ручьи</li>
+                <li>Цветы</li>
+            </ul>
+        </section>
+        <aside>
+            <table>
+                <caption><h2>Календарь весны</h2></caption>
+                <tr>
+                    <td>Март</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>Апрель</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Май</td>
+                    <td>31</td>
+                </tr>
+            </table>
+        </aside>
+        <section id="prazdniki">
+            <table>
+                <caption><h2>Праздники весны</h2></caption>
+                <tr>
+                    <td>Март</td>
+                    <td>8 марта - международный женский день</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Апрель</td>
+                    <td>1 апреля - день дурака</td>
+                </tr>
+                <tr>
+                    <td>7 апреля - день рунета</td>
+                </tr>
+                <tr>
+                    <td>12 апреля - день космонавтики</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Май</td>
+                    <td>1 мая - День международной солидарности трудящихся</td>
+                </tr>
+                <tr>
+                    <td>5 мая - Пасха</td>
+                </tr>
+                <tr>
+                    <td>9 мая - День победы</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    <div id="gallary">
+        <h2>Галерея весны</h2>
+        <img src="images/crocus-2139395_640.jpg" alt="">
+        <img src="images/insect-4489864_640.jpg" alt="">
+        <img src="images/sunset-815270_640.jpg" alt="">
+        <img src="images/tree-7186835_640.jpg" alt="">
+    </div>
+    <div id="film">
+        <video src="video/nature_-_23551 (720p).mp4" autoplay controls></video>
+    </div>
+    <audio src="sound/01. Allegro.mp3" controls></audio>
+    <div id="treble_clef" onclick="play()">
+        <img src="images/treble-clef_icon-icons.com_60141.png" alt="">
+    </div>
+    <script>
+        let clickCount = 0
+        function play(){
+            clickCount++
+            if(clickCount % 2 == 1)
+            document.querySelector("audio").play()
+            else
+            document.querySelector("audio").pause()
+        }
+    </script>
+</body>
+</html>

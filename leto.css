@@ -1,0 +1,191 @@
+@font-face {
+    font-family: lobster;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+body{
+    margin: 0;
+}
+#title{
+    background-image: url(backgrounds/indiana-dunes-state-park-1848559_1920.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+#title h1{
+    margin: auto;
+    font-size: 3vw;
+    background-color: rgba(128, 128, 128, 0.5);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+#title span{
+    margin: auto;
+    color:coral;
+    font-family: lobster;
+}
+#poem{
+    background-color: hsl(190, 30%, 60%);
+    display: flex;
+    padding: 75px 50px;
+    justify-content: center;
+    gap: 1%;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+#poem img{
+    border-radius: 50%;
+    margin-bottom: 40px;
+    transform: scale(1.5);
+}
+#poem figure{
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    width: 20vw;
+}
+#poem figcaption{
+    text-align: left;
+    line-height: 2;
+    font-size: 1.5em;
+    hyphens: auto;
+    width: fit-content;
+    margin: auto;
+}
+#signs{
+    background-image: url(backgrounds/trees-3294681_1920.jpg);
+}
+.signsanim{
+    animation: zoom 5s;
+}
+@keyframes zoom{
+    from{
+        background-size: 100%;
+    }
+    to{
+        background-size: 140%;
+    }
+}
+#signs h2{
+    text-align: center;
+    font-size: 3em;
+    color:rgb(235, 129, 0);
+    font-family: lobster;
+}
+#signs ul{
+    width: fit-content;
+    margin: auto;
+    font-size: 3em;
+    line-height: 2;
+    color:rgb(235, 129, 0);
+    font-family: lobster;
+}
+.filter{
+    padding: 100px;
+    background-color: rgba(128, 128, 128, 0.705);
+}
+#calendars{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 50px 0;
+    font-family: lobster;
+    font-size: 2em;
+    color:bisque;
+    background-color: hsl(190, 30%, 60%);
+}
+#calendars table{
+    border: 10px groove tan;
+    padding: 40px;
+    border-spacing: 15px;
+}
+#calendars td{
+    border: 5px solid tan;
+    padding: 10px;
+    border-radius: 5px;
+}
+#calendars a{
+    color: bisque;
+    text-decoration: none;
+}
+#calendars td:hover{
+    color:  hsl(190, 30%, 60%);
+    background-color: bisque;
+}
+#calendars a:hover{
+    color:  hsl(190, 30%, 60%);
+}
+#calendars td:hover a{
+    color:  hsl(190, 30%, 60%);
+}
+#butterfly1{
+    position: absolute;
+    top: 700px;
+    left: 30%;
+    width: 5%;
+    animation: fly1 5s infinite;
+}
+#butterfly2{
+    position: absolute;
+    top: 800px;
+    left: 60%;
+    width: 5vw;
+    animation: fly2 6s infinite 7s,7s;
+    transform: scaleX(-1);
+}
+
+figure:first-child{
+    transform:translateX(-40vw);
+    transition: all 2s;
+}
+figure:last-child{
+    transform:translateX(40vw);
+    transition: all 2s;
+}
+
+@keyframes fly1{
+    from{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(30vw, -20vh);
+    }
+    to{
+        transform: translate(100vw, -5vh);
+    }
+}
+@keyframes fly2{
+    from{
+        transform: translate(0,0) scaleX(-1);
+    }
+    50%{
+        transform: translate(-30vw, -20vh) scaleX(-1);
+    }
+    to{
+        transform: translate(-100vw, -5vh) scaleX(-1);
+    }
+}
+
+@media (max-width: 1000px){
+    #title h1{
+        font-size: 6vw;
+    }
+    #poem{
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+    #poem figure{
+        width: 60vw;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #calendars{
+        flex-direction: column;
+    }
+    #calendars table:last-child{
+        padding: 0;
+        border-spacing: 5px;
+        margin-top: 20px;
+    }
+}

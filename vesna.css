@@ -1,0 +1,117 @@
+body{
+    background-image: url(backgrounds/bird-2295431_1920.jpg);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+}
+main{
+    background-color: rgba(0, 255, 128, 0.5);
+    width: fit-content;
+    padding: 50px 100px;
+    margin-left: 15%;
+}
+section{
+    background-color: rgba(0, 255, 128, 0.5);
+    width: fit-content;
+    padding: 50px 100px;
+    margin-left: 15%;
+    margin-top: 5%;
+    border: 10px groove pink;
+}
+#prazdniki{
+    margin-left: 57%;
+    margin-top: -450px;
+    border: none;
+    padding: 15px;
+}
+li:first-child{
+    background-image: url(images/water_drop_icon_175805\(1\).png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 7px;
+    padding-left: 40px;
+}
+li:nth-child(2){
+    background-image: url(images/summer_vacation_sun_sunlight_summer_heat_hot_icon_133429.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 7px;
+    padding-left: 40px;
+}
+li:nth-child(3){
+    background-image: url(images/travel_river_nature_jungle_forest_icon_226323.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 7px;
+    padding-left: 40px;
+}
+li:nth-child(4){
+    background-image: url(images/1494258117-tulipflowerspringblossomecologynaturefloral_84370.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 7px;
+    padding-left: 40px;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    line-height: 2;
+}
+table{
+    border: 10px groove pink;
+    padding: 30px;
+    border-spacing: 15px;
+}
+td{
+    border: 5px solid pink;
+    padding: 20px;
+    text-align: center;
+}
+aside{
+    padding: 20px;
+    background-color: rgba(0, 255, 128, 0.5);
+    margin-left: 37.5%;
+    margin-top: -750px;
+    width: fit-content;
+    height: auto;
+}
+#gallary{
+    background-color: rgba(0, 255, 128, 0.5);
+    padding: 20px;
+    text-align: center;
+    width: 1400px;
+    margin: auto;
+    margin-top: 20px;
+}
+#infospring{
+    margin: auto;
+    margin-left: -80px;
+}
+#film{
+    text-align: center;
+    width: 1400px;
+    background-color: rgba(0, 255, 128, 0.5);
+    margin: auto;
+    padding: 20px;
+}
+audio{
+    display: none;
+}
+#treble_clef{
+    position: absolute;
+    top: 500px;
+    left: 40%;
+    background-color: rgba(255, 192, 203, 0.795);
+    padding: 20px;
+    border-radius: 50%;
+}
+#treble_clef img{
+    
+    animation: go 3s linear infinite;
+}
+@keyframes go {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Осень</title>
+    <style>
+        li{
+            background-repeat: no-repeat;
+            padding: 15px;
+            padding-left: 40px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        table{
+            padding: 30px;
+            border: 10px groove goldenrod;
+            border-spacing: 10px;
+            background-color: #cf7f536b;
+            margin-left: 65%;
+            margin-top: -400px;
+            /* border-collapse: collapse; */
+        }
+        td{
+            padding: 30px;
+            border: 10px solid goldenrod;
+            border-radius: 50%;
+        }
+        #gallary img{
+            width: 25%;
+            margin: 10px;
+        }
+        #gallary{
+            background-color: rgba(112, 128, 144, 0.473);
+            width: 74%;
+            margin: auto;
+            text-align: center;
+            margin-top: 10px;
+        }
+        #film{
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #film video{
+            width: 74%;
+        }
+        #sound{
+            text-align: center;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #sound audio{
+            width: 74%;
+        }
+        #list1{
+            position: absolute;
+            top: 100px;
+            left: 20%;
+            animation: fall 5s infinite;
+        }
+        #list2{
+            position: absolute;
+            top: 100px;
+            left: 60%;
+            transform: rotate(90deg);
+            animation: fall 5s infinite;
+            animation-delay: 1s;
+        }
+        #list3{
+            position: absolute;
+            top: 100px;
+            left: 80%;
+            animation: fall 5s infinite;
+            animation-delay: 0.5s;
+        }
+        @keyframes fall{
+            from{transform: translateY(0);}
+            to{transform: translateY(120vh) rotate(360deg);}
+        }
+    </style>
+</head>
+<body style="background-image: url(osen.jpg);
+background-size: contain;
+height: 100vh;
+background-repeat: no-repeat;
+background-position: center;
+background-color: #6a381e;
+background-attachment: fixed;">
+    <h1 style="background-color: rgba(202, 120, 53, 0.5);
+    padding: 50px;
+    color: midnightblue;
+    font-size: 2em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: -140px;">Осень 2023</h1>
+    <p style="background-color: rgba(255, 127, 80, 0.5);
+    padding: 40px;
+    width: fit-content;
+    margin-left: 40%;
+    margin-top: 150px;">
+        Ну вот наконец-то дождливый сентябрь<br>
+        Ну вот наконец-то прохладная Осень<br>
+        И тучи повисли косыми сетями<br>
+        И кончился месяц под номером восемь<br>
+    </p>
+    <section style="background-color: #cf7f536b;
+    width:fit-content;
+    padding: 50px;
+    margin-left: 15%;
+    ">
+        <h2>Признаки осени</h2>
+        <ul>
+            <li style="background-image: url(images/if-weather-42-2682809_90794.png);">Похолодание</li>
+            <li style="background-image: url(images/brown_leaf_icon_133976.png);">Листопад</li>
+            <li style="background-image: url(images/rain_weather_icon_151998.png);">Дождливость</li>
+            <li style="background-image: url(images/pumpkin_halloween_23222.png);">Урожай</li>
+        </ul>
+    </section>
+    <table>
+        <caption style="color: lightyellow;">Календарь осени</caption>
+        <tr>
+            <td>Сентябрь</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Октябрь</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <td>Ноябрь</td>
+            <td>30</td>
+        </tr>
+    </table>
+    <table style="margin-top: -425px;
+    margin-left: 31%;">
+        <caption style="color: lightyellow;"> Праздники осени</caption>
+        <tr>
+            <td rowspan="2">Сентябрь</td>
+            <td>1 сентября - День знаний</td>
+        </tr>
+        <tr>
+            <td>13 сентября - День программиста</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Октябрь</td>
+            <td>31 октября - Хэллоуин</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Ноябрь</td>
+            <td>4 ноября - День народного единства</td>
+        </tr>
+        <tr>
+            <td>18 ноября — день рождения Деда Мороза</td>
+        </tr>
+    </table>
+    <div id="gallary">
+        <img src="images/image-6036440_640.jpg" alt="">
+        <img src="images/autumn-779827_640.jpg" alt="">
+        <img src="images/road-5704083_640.jpg" alt="">
+    </div>
+    <div id="film">
+        <video src="video/autumn_-_18420 (720p).mp4" autoplay controls></video>
+    </div>
+    <div id="sound">
+        <audio src="sound/autumn-gold-123285.mp3" controls></audio>
+    </div>
+    <img src="images/list.png" alt="" id="list1">
+    <img src="images/list1.png" alt="" id="list2">
+    <img src="images/list1.png" alt="" id="list3">
+</body>
+</html>
