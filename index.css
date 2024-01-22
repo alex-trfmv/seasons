@@ -1,0 +1,104 @@
+@font-face {
+    font-family: lobster;
+    src: url(fonts/Lobster-Regular.ttf);
+}
+a{
+    width: 20%;
+    height: 50vh;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    overflow: hidden;
+    font-size: 3em;
+    color:darkred;
+    font-weight: 900;
+    font-family: lobster;
+}
+a:hover img{
+    width: 130%;
+    height: 70vh;
+}
+a:hover span{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+a:hover{
+    font-size: 4em;
+}
+img{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    position: relative;
+    z-index: -10;
+    transition: all 2s;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 2s;
+}
+span p{
+    text-align: center;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#clock{
+    width: 300px;
+    height: 300px;
+    border: 10px groove teal;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+    position: relative;
+}
+#arrow1{
+    width: 40%;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 50%;
+    transform-origin: left;
+    transform: rotate(-90deg);
+    animation: go 3600s infinite linear;
+}
+#arrow2{
+    width: 45%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: calc(50% - 2.5px);
+    left: 50%;
+    transform-origin: left;
+    transform: rotate(-90deg);
+    animation: go 60s infinite;
+    animation-timing-function: steps(60, end);
+}
+#bolt{
+    width: 5%;
+    height: 5%;
+    background-color: black;
+    position: absolute;
+    top: 47.5%;
+    left: 47.5%;
+    border-radius: 50%;
+}
+
+@keyframes go{
+    from{
+        transform: rotate(-90deg);
+    }
+    to{
+        transform: rotate(270deg);
+    }
+}

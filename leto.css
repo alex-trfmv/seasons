@@ -135,6 +135,49 @@ body{
     transform: scaleX(-1);
 }
 
+#gallary{
+    padding: 0;
+    overflow: hidden;
+}
+#gallary #container{
+    width: 400%;
+    height: 90vh;
+    animation: start 15s infinite alternate ease;
+}
+@keyframes start{
+    from{
+        transform: translateX(0);
+    }
+    33%{
+        transform: translateX(-100vw);
+    }
+    67%{
+        transform: translateX(-200vw);
+    }
+    to{
+        transform: translateX(-300vw);
+    }
+}
+
+#gallary #container img{
+    width: 25%;
+    height: 90vh;
+    object-fit: cover;
+}
+
+#wordart{
+    background-color: hsl(166, 100%, 82%);
+}
+
+.wordart-attribution{
+    display: none;
+}
+
+#answergarden{
+    text-align: center;
+    background-color: hsl(166, 100%, 82%)
+}
+
 figure:first-child{
     transform:translateX(-40vw);
     transition: all 2s;
@@ -187,5 +230,13 @@ figure:last-child{
         padding: 0;
         border-spacing: 5px;
         margin-top: 20px;
+    }
+    @keyframes zoom{
+        from{
+            background-size: auto 100%;
+        }
+        to{
+            background-size: auto 140%;
+        }
     }
 }
