@@ -102,3 +102,16 @@ h1{
         transform: rotate(270deg);
     }
 }
+
+@media (max-width: 500px){
+    nav{
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
